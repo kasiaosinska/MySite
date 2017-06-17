@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Galada);@import url(https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&subset=cyrillic,cyrillic-ext,latin-ext);@import url(https://fonts.googleapis.com/css?family=Amatic+SC:700&subset=latin-ext);/*!
+@import url(https://fonts.googleapis.com/css?family=Galada);@import url(https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&subset=cyrillic,cyrillic-ext,latin-ext);@import url(https://fonts.googleapis.com/css?family=Amatic+SC:700&subset=latin-ext);@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=latin-ext);/*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
  * Copyright 2011-2016 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
@@ -6856,12 +6856,18 @@ html {
 
 .space-section .ribbon {
   display: inline-block;
-  top: 5vh !important;
+  top: 10vh !important;
+  font-family: 'Amatic SC', cursive !important;
+}
+
+.space-section .ribbon a {
+  text-decoration: none !important;
+  color: #f4f4f4;
 }
 
 .planet {
   box-sizing: border-box;
-  position: absolute;
+  position: relative;
   border-radius: 100%;
   height: 20vh;
   width: 10vw;
@@ -6915,6 +6921,18 @@ html {
   box-shadow: inset 2px 2px 0 rgba(0, 0, 0, 0.2);
 }
 
+.planet-2 {
+  margin-top: 35vh;
+}
+
+.planet-3 {
+  margin-top: -5vh;
+}
+
+.planet-4 {
+  margin-top: 15vh;
+}
+
 .sky-with-clouds {
   background: #43C6AC;
   /* fallback for old browsers */
@@ -6936,19 +6954,22 @@ html {
   background-color: #ffbe00;
   border-radius: 20px;
   margin: 10vh 15vw;
-  padding: 6vh 2vw;
+  padding: 10vh 2vw 0 2vw;
 }
 
-.sky-with-clouds .skills-area .skills-icons {
+.sky-with-clouds .skills-area .skills-row {
+  margin-bottom: 6vh;
+}
+
+.sky-with-clouds .skills-area .skills-row .skills-icons {
   width: 14vw;
   height: 14vh;
   margin: 1vh 1vw;
 }
 
-.sky-with-clouds .skills-area .round {
-  margin: 0 2.5vw;
-  width: 9vw;
-  height: 14vh;
+.sky-with-clouds .skills-area .skills-row .square {
+  padding: 0 3vw;
+  height: 15%;
 }
 
 .sky-with-clouds #sun {
@@ -7413,8 +7434,8 @@ html {
 }
 
 .plane-blue-section .plain-container .about-me p {
-  font-size: 1.3vw;
-  font-family: 'PT Sans', sans-serif;
+  font-size: 1.5vw;
+  font-family: 'Amatic SC', cursive;
   font-weight: 500;
   text-indent: 1vw;
   padding: 1vh 1vw;
@@ -7532,7 +7553,8 @@ html {
   -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 1px 1px;
   -moz-box-shadow: rgba(0, 0, 0, 0.3) 0 1px 1px;
   box-shadow: rgba(0, 0, 0, 0.3) 0 1px 1px;
-  font-family: 'Helvetica Neue',Helvetica, sans-serif;
+  font-family: 'Amatic SC', cursive;
+  letter-spacing: 0.1vw;
 }
 
 .ribbon .ribbon-content {
@@ -7551,7 +7573,7 @@ html {
   z-index: 4;
   position: relative;
   font-size: 4vh !important;
-  color: #D5E4E8;
+  color: #f4f4f4;
   text-shadow: #D65C5C 0 1px 0;
   margin: 0;
   padding: 1.6vh 1vw;

@@ -7,6 +7,10 @@
 //font-family: 'PT Sans', sans-serif;
 @import url('https://fonts.googleapis.com/css?family=Amatic+SC:700&subset=latin-ext');
 //font-family: 'Amatic SC', cursive;
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=latin-ext');
+//font-family: 'Roboto', sans-serif;
+
+
 
 $white : #ffffff;
 $black: #000000;
@@ -102,14 +106,19 @@ html{
     background-image: -webkit-linear-gradient(top, #000000 60%, #191654 100%);
     .ribbon {
         display: inline-block;
-        top: 5vh !important;
+        top: 10vh !important;
+        font-family: 'Amatic SC', cursive !important;
+        a {
+            text-decoration: none !important;
+            color: $smokeyWhite;
+        }
     }
 }
 
 //red planet
 .planet {
     box-sizing: border-box;
-    position: absolute;
+    position: relative;
     border-radius: 100%;
     height: 20vh;
     width: 10vw;
@@ -158,6 +167,19 @@ html{
     box-shadow: inset 2px 2px 0 rgba(0, 0, 0, 0.2);
 }
 
+.planet-2 {
+    margin-top: 35vh;
+}
+
+.planet-3 {
+    margin-top: -5vh;
+}
+
+.planet-4 {
+    margin-top: 15vh;
+}
+
+
 
 //sky with clouds
 
@@ -177,35 +199,20 @@ html{
         background-color: $yellow;
         border-radius: 20px;
         margin: 10vh 15vw;
-        padding: 6vh 2vw;
-        .skills-icons {
-            width: 14vw;
-            height: 14vh;
-            margin: 1vh 1vw;
-        }
-        .round {
-            margin: 0 2.5vw;
-            width: 9vw;
-            height: 14vh;
+        padding: 10vh 2vw 0 2vw;
+        .skills-row {
+            margin-bottom: 6vh;
+            .skills-icons {
+                width: 14vw;
+                height: 14vh;
+                margin: 1vh 1vw;
+            }
+            .square {
+                padding: 0 3vw;
+                height: 15%;
+            }
         }
     }
-    //.sun {
-    //    height: 15vh;
-    //    width: 8vw;
-    //    border-radius: 50%;
-    //    background-color: $yellow;
-    //    position: relative;
-    //    margin: 2vh 2vw;
-    //    z-index: 5;
-    //    cursor: pointer;
-    //    p {
-    //        font-family: 'Amatic SC', cursive;
-    //        font-size: 2.5vw;
-    //        text-align: center;
-    //        line-height: 15vh;
-    //    }
-    //}
-
     #sun{
         position: relative;
         width: 150px;
@@ -621,8 +628,8 @@ html{
             position: relative;
             z-index: 99;
             p {
-                font-size: 1.3vw;
-                font-family: 'PT Sans', sans-serif;
+                font-size: 1.5vw;
+                font-family: 'Amatic SC', cursive;
                 font-weight: 500;
                 text-indent: 1vw;
                 padding: 1vh 1vw;
@@ -728,7 +735,8 @@ html{
     -webkit-box-shadow: rgba(0,0,0,0.3) 0 1px 1px;
     -moz-box-shadow: rgba(0,0,0,0.3) 0 1px 1px;
     box-shadow: rgba(0,0,0,0.3) 0 1px 1px;
-    font-family: 'Helvetica Neue',Helvetica, sans-serif;
+    font-family: 'Amatic SC', cursive;
+    letter-spacing: 0.1vw;
     .ribbon-content {
         z-index: 9999;
         position: relative;
@@ -743,7 +751,7 @@ html{
             z-index: 4;
             position: relative;
             font-size: 4vh !important;
-            color: #D5E4E8;
+            color: $smokeyWhite;
             text-shadow: #D65C5C 0 1px 0;
             margin:0;
             padding: 1.6vh 1vw;
