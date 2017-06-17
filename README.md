@@ -1,0 +1,1 @@
+# Katarzyna Osinska - Junior Front-End Developer
