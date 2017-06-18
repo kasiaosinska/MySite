@@ -76,7 +76,11 @@
 /* 1 */
 /***/ (function(module, exports) {
 
+var winHeight = $(document).height();
+
 $(document).ready(function () {
+
+    $(document).scrollTop(winHeight);
 
     $('.show-text').click(function () {
         $('.about-me').slideToggle();

@@ -6925,10 +6925,7 @@ html {
 
 .planet-2 {
   margin-top: 35vh;
-}
-
-.planet-3 {
-  margin-top: -5vh;
+  margin-left: 10vw;
 }
 
 .planet-4 {
@@ -6981,6 +6978,7 @@ html {
   z-index: 99;
   text-align: center;
   line-height: 150px;
+  cursor: pointer;
 }
 
 .sky-with-clouds #sun p {
