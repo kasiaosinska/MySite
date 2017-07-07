@@ -1,10 +1,11 @@
+require('jquery');
+require('bootstrap');
+require.context('./static/', true, /^\.\/.*\.html/);
 var winHeight = $(document).height();
 
 $(document).ready(function () {
 
     $(document).scrollTop(winHeight);
-
-    // window.scrollTo(0,document.body.scrollHeight); inne rozwiązanie 
 
     $('.show-text').click(function () {
         $('.about-me').slideToggle();
